@@ -60,8 +60,8 @@ all: main-build
 main-build: HSE_SYSCLK_8Mhz.elf secondary-outputs
 
 # Tool invocations
-HSE_SYSCLK_8Mhz.elf HSE_SYSCLK_8Mhz.map: $(OBJS) $(USER_OBJS) E:\Udemy\Mastering\ uC\WorkSpace\HSE_SYSCLK_8Mhz\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "HSE_SYSCLK_8Mhz.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"E:\Udemy\Mastering uC\WorkSpace\HSE_SYSCLK_8Mhz\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HSE_SYSCLK_8Mhz.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+HSE_SYSCLK_8Mhz.elf HSE_SYSCLK_8Mhz.map: $(OBJS) $(USER_OBJS) E:\Udemy\Mastering\ uC\Github\ repo\STM32_Clock_Settings\STM32_Clock_Settings\HSE_SYSCLK_8Mhz\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "HSE_SYSCLK_8Mhz.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"E:\Udemy\Mastering uC\Github repo\STM32_Clock_Settings\STM32_Clock_Settings\HSE_SYSCLK_8Mhz\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HSE_SYSCLK_8Mhz.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
