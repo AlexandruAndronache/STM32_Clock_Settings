@@ -1,0 +1,2 @@
+../Core/Src/msp.c:11:6:HAL_MspInit	1
+../Core/Src/msp.c:27:7:HAL_UART_MspInit	1
