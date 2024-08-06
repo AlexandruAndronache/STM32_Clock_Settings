@@ -1,12 +1,12 @@
 /*
  * main.c
  *
- *  Created on: 02-Jun-2018
- *      Author: kiran
+ *  Created on: 06-Aug-2024
+ *      Author: alexa
  */
 
-/*---------MAIN TEMPLATE FOR CLOCK SETTINGS-----------*/
-/* Contains examples */
+/*---------My modified template-----------*/
+
 
 #include<string.h>
 #include<stdio.h>
