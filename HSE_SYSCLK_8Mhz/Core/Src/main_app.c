@@ -5,6 +5,9 @@
  *      Author: kiran
  */
 
+/*---------MAIN TEMPLATE FOR CLOCK SETTINGS-----------*/
+/* Contains examples */
+
 #include<string.h>
 #include<stdio.h>
 #include "stm32f4xx_hal.h"
